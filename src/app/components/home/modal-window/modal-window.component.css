@@ -1,0 +1,9 @@
+.modal {
+  background-color: aquamarine;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  width: 535px;
+  text-align: center;
+  right: 50%;
+}

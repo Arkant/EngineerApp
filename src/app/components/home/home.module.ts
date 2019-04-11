@@ -1,3 +1,4 @@
+import { ModalWindowService } from './../../services/modal-window.service';
 import { HomeService } from './../../services/home.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -16,6 +17,6 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     ElModule.forRoot()
   ],
-  providers: [HomeService]
+  providers: [HomeService, ModalWindowService]
 })
 export class HomeModule { }

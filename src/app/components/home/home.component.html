@@ -8,8 +8,12 @@
     <el-table-column model-key="author" label="Author" width="140">
   </el-table-column>
   <el-table-column label="More" width="120">
-    <!-- <ng-template #slot let-scope="scope"> -->
-      <!-- <el-button type="text" size="small" (click)="takeDataFromRow(scope)">See Details</el-button> -->
-    <!-- </ng-template> -->
+    <ng-template #slot let-scope="scope">
+      <el-button type="text" size="small" (click)="takeDataFromRow(scope)">See Details</el-button>
+    </ng-template>
   </el-table-column>
 </el-table>
+
+<div *ngIf="flag">
+  <app-modal-window></app-modal-window>
+</div>
